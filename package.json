@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-zip",
+  "name": "cordova-plugin-ebw-zip",
   "version": "3.1.0",
   "description": "Unzips zip files",
   "cordova": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MobileChromeApps/cordova-plugin-zip.git"
+    "url": "https://github.com/HeB-Mobile/cordova-plugin-zip.git"
   },
   "keywords": [
     "ecosystem:cordova",

@@ -267,7 +267,8 @@
                     // Set the original datetime property
                     if (fileInfo.dosDate != 0) {
                         NSDate *orgDate = [[self class] _dateWithMSDOSFormat:(UInt32)fileInfo.dosDate];
-                        NSDictionary *attr = @{NSFileModificationDate: orgDate};
+                        NSDictionary *attr = [NSDictionary dictionaryWithObject:@{NSFileModificationDate: orgDate}
+                        forKey:NSFileProtectionKey];
                         
                         if (attr) {
                             if ([fileManager setAttributes:attr ofItemAtPath:fullPath error:nil] == NO) {
